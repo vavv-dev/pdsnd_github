@@ -32,7 +32,7 @@ def get_filters():
         day = input("Enter the day you want to analyze (all, monday, tuesday, ... sunday): ").lower()
         if day in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
             break
-        print("Invalid input. Please enter all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday.")
+        print("잘못된 입력 입니다. Please enter all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday.")
 
     print('-'*40)
     return city, month, day
