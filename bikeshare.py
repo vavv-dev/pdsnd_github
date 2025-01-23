@@ -15,22 +15,19 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    print('안녕하세요. 미국 자전거 분석의 세계에 오신것을 환영합니다.')
     while True:
         city = input("Enter the city you want to analyze (chicago, new york city, washington): ").lower()
         if city in CITY_DATA:
             break
         print("Invalid input. Please enter chicago, new york city, or washington.")
 
-    # get user input for month (all, january, february, ... , june)
     while True:
         month = input("Enter the month you want to analyze (all, january, february, ... , june): ").lower()
         if month in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
             break
-        print("Invalid input. Please enter all, january, february, march, april, may, or june.")
+        print("제대로 입력좀 해주세요. Please enter all, january, february, march, april, may, or june.")
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("Enter the day you want to analyze (all, monday, tuesday, ... sunday): ").lower()
         if day in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
